@@ -1,0 +1,7 @@
+1.INSERT INTO wychowawca VALUES("27", "Wktoria", "Jasny", "1");
+
+2.SELECT wychowawca.imie, wychowawca.nazwisko FROM wychowawca, uczen WHERE wychowawca.id_klasy=uczen.id_klasy AND uczen.nazwisko='Markiewicz';
+
+3.CREATE USER 'Jan_Bogucki'@'localhost' IDENTIFIED BY 'jb_123';
+
+4.GRANT SELECT,  INSERT, DELETE ON szkola.uczen TO 'Jan_Bogucki'@'localhost';

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Szkoła ponadgimnazjalna</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="styl.css">
+	<script type="text/javascript" src="skrypt.js"></script>
+</head>
+<body>
+	<header>
+		<h2>Projekt strony internetowej szkoły ponadgimnazjalnej</h2>
+	</header>
+	<section id="sl">
+		<h3>Do pobrania</h3>
+		<ul>
+			<li><a href="../baza/zapytania.txt">zapytania SQL</a></li>
+			<li><a href="../baza/szkola_nowa.sql">baza danych</a></li>
+		</ul>
+	</section>
+	<section id="sc">
+		<table>
+			<tr>
+				<th>Treść zapytania</th>
+				<th class="sk">Zrzut ekranu</th>
+			</tr>
+			<tr>
+				<td>1.INSERT INTO wychowawca VALUES("27", "Wktoria", "Jasny", "1");
+</td>
+				<td class="sk"><img src="kwerenda1.jpg" alt="kwerenda1.jpg"></td>
+			</tr>
+			<tr>
+				<td>2.SELECT wychowawca.imie, wychowawca.nazwisko FROM wychowawca, uczen WHERE wychowawca.id_klasy=uczen.id_klasy AND uczen.nazwisko='Markiewicz';</td>
+				<td class="sk"><img src="kwerenda2.jpg" alt="kwerenda2.jpg"></td>
+			</tr>
+			<tr>
+				<td>3.CREATE USER 'Jan_Bogucki'@'localhost' IDENTIFIED BY 'jb_123';</td>
+				<td class="sk"><img src="nowy_uzytkownik.jpg" alt="nowy_uzytkownik.jpg"></td>
+			</tr>
+			<tr>
+				<td>4.GRANT SELECT,  INSERT, DELETE ON szkola.uczen TO 'Jan_Bogucki'@'localhost';</td>
+				<td class="sk"><img src="uprawnienia.jpg" alt="uprawnienia.jpg"></td>
+			</tr>
+		</table>
+	</section>
+	<section id="sp">
+		<h4>Obliczanie średniej ocen</h4>
+		<ul>
+			<li>Polak <input type="text" name="i1" id="i1"></li>
+			<li>Nowak <input type="text" name="i2" id="i2"></li>
+			<li>Rysik <input type="text" name="i3" id="i3"></li>
+		</ul>
+		<input type="button" value="Oblicz" onclick="srednia()">
+		<h4>Średnia ocen</h4>
+		<div id="wynik"></div>
+	</section>
+	<footer>
+		<h5>autor strony 12345678910</h5>
+	</footer>
+</body>
+</html>

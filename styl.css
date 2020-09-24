@@ -1,0 +1,62 @@
+a {
+	color: brown;
+}
+
+header, footer, section#sp, section#sl {
+	background-color: #ffb31c;
+}
+
+section#sc {
+	background-color: #ffcb71;
+	width: 60%;
+	overflow: scroll;
+}
+
+header, footer {
+	text-align: center;
+}
+
+section#sp {
+	text-align: right;
+}
+
+body {
+	font-family: Verdana;
+}
+
+section#sp, section#sl {
+	width: 20%;
+}
+
+section#sl, section#sc ,section#sp {
+	height: 480px;
+	float: left;
+}
+
+header {
+	height: 60px;
+}
+
+footer {
+	height: 30px;
+	clear: both;
+}
+
+td, th {
+	border: black 1px ridge;
+}
+
+th.sk {
+	width: 405px;
+}
+
+ul {
+	list-style-type: square;
+}
+
+
+
+
+
+
+
